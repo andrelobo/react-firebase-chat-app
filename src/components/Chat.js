@@ -67,7 +67,7 @@ export const Chat = ({ room }) => {
           value={newMessage}
           onChange={(event) => setNewMessage(event.target.value)}
           className="new-message-input"
-          placeholder="Type your message here..."
+          placeholder="Escreve aqui ó..."
         />
         <button type="submit" className="send-button">
           Send

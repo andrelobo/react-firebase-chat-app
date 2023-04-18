@@ -35,7 +35,7 @@ function ChatApp() {
               setIsInChat(true);
             }}
           >
-            Enter Chat
+            Entrar na fofocaiada
           </button>
         </div>
       ) : (
