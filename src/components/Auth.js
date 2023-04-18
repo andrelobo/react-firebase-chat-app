@@ -9,6 +9,7 @@ export const Auth = ({ setIsAuth }) => {
   const signInWithGoogle = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
+      console.log(result);
       cookies.set("auth-token", result.user.refreshToken);
       setIsAuth(true);
     } catch (err) {
@@ -17,8 +18,8 @@ export const Auth = ({ setIsAuth }) => {
   };
   return (
     <div className="auth">
-      <p> Sign In With Google To Continue </p>
-      <button onClick={signInWithGoogle}> Sign In With Google </button>
+      <p> Entra com o Google, abestado </p>
+      <button onClick={signInWithGoogle}> Vrau! </button>
     </div>
   );
 };
